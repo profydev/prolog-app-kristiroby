@@ -138,4 +138,9 @@
   @media (min-width: breakpoint.$desktop) {
     display: flex;
   }
+
+  button {
+    transform-origin: 10px;
+    transform: rotate(180deg);
+  }
 }
