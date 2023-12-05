@@ -87,7 +87,11 @@ export function SidebarNavigation() {
             />
             <MenuItemButton
               text="Collapse"
-              iconSrc="/icons/arrow-left.svg"
+              iconSrc={
+                isSidebarCollapsed
+                  ? "/icons/thin-arrow-right-icon.svg"
+                  : "/icons/arrow-left.svg"
+              }
               isCollapsed={isSidebarCollapsed}
               onClick={() => toggleSidebar()}
               className={styles.collapseMenuItem}
